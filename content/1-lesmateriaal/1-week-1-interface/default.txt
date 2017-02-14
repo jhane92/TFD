@@ -1,0 +1,19 @@
+Title: Week 1 - Interface
+
+----
+
+Text: 
+
+Deze week behandelen we de interface van Sketch. Met een simpele class challenge (button) komen we in aanraking met de meest belangrijke functies van Sketch. Bijvoorbeeld het aanmaken, stijlen en organiseren van elementen.
+
+##Presentatie
+* (file: tools-for-design_sketch_week-1.keynote.key text: Presentatie Keynote )
+* (file: tools-for-design_sketch_week-1.pdf text: Presentatie PDF )
+
+----
+
+Ext-url: 
+
+----
+
+Tags: 

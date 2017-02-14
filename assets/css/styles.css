@@ -1,0 +1,516 @@
+/*
+
+	CONTENT
+
+	1. Shared Styles
+	2. Typography
+	  - 2.1 General
+	  - 2.2 Text Styles
+	    - 2.2.1 Headers
+	    - 2.2.2 Inline styles
+	3. Layout
+	  - 3.1 General
+	  - 3.2 Article
+	    - 3.2.1 General
+	    - 3.2.2 Header image
+	    - 3.2.3 Author & publish date
+	    - 3.2.4 Content wrapper
+	    - 3.2.5 Previous/next article buttons
+	  - 3.3 Slope
+	4. Header
+	  - 4.1 General
+	  - 4.2 Navigation
+	  - 4.3 Breadcrumbs
+	5. Card View
+	  - 5.1 General
+	  - 5.2 Image
+	  - 5.3 Figcaption
+	6. List View
+	  - 6.1 General
+	  - 6.2 Image
+	  - 6.3 Figcaption
+	  - 6.4 Read More
+	  - 6.5 Responsive
+	7. Footer
+
+*/
+
+
+/* ----- 1. Shared Styles ----- */
+.box-shadow-small{
+	box-shadow: 0 0 2px 0 rgba(0,0,0,.25);
+}
+
+.button{
+	padding: .5rem;
+	margin-top: 1.5rem;
+	border: none;
+	border-radius: .2rem;
+
+	background-color: #fff;
+}
+
+
+/* ----- 2. Typography ----- */
+
+	/* ----- 2.1 General ----- */
+	@font-face{
+		font-family:'Interstate-ExtraLight';
+		src: url('../assets/fonts/Interstate-ExtraLight.eot');
+		src: url('../assets/fonts/Interstate-ExtraLight.eot?#iefix') format('embedded-opentype'),
+			 url('../assets/fonts/Interstate-ExtraLight.woff') format('woff'),
+			 url('../assets/fonts/Interstate-ExtraLight.ttf') format('truetype'),
+			 url('../assets/fonts/Interstate-ExtraLight.svg#Interstate-ExtraLight') format('svg');
+		font-weight: 200;
+		font-style: normal;
+	}
+
+	body{
+		font-family: 'Interstate-ExtraLight';
+		font-size: 100%;
+		line-height: 1.5;
+	}
+
+	@media all and (max-width: 40rem){
+		body{
+			font-size: 90%;
+		}
+	}
+
+	/* ----- 2.2 Text Styles ----- */
+
+		/* ----- 2.2.1 Headers ----- */
+		h1,h2,h3{
+			line-height: 1.2;
+		}
+
+		h1{
+			font-size: 300%;  
+		}
+
+		h2{
+			font-size: 200%;
+		}
+
+		h3{
+			font-size: 125%;
+		}
+
+		@media all and (max-width: 50rem){
+			h1{
+				font-size: 200%;
+			}
+
+			h2{
+				font-size: 150%;
+			}
+
+			h3{
+				font-size: 125%;
+			}
+		}
+
+		/* ----- 2.2.2 Inline styles ----- */
+		a{
+			text-decoration: none;
+			color: #4A90E2;
+		}
+
+		a:hover,
+		.page-header a.active:not(.no-decoration),
+		.page-header a.no-decoration:not(.active):hover{
+			text-decoration: underline;
+		}
+
+		small{
+			font-size: 87.5%;
+			color: #808080;
+		}
+
+		.intro{
+			font-family: 'Interstate Light';
+		}
+
+		.centered-text{
+			text-align: center;
+		}
+
+
+/* ----- 3. Layout ----- */
+
+	/* ----- 3.1 General ----- */
+	main{
+		/* the overflow is to get a proper height when
+		floating prev/next buttons are set */
+		overflow: auto;
+
+		max-width: 50rem;
+		padding: 1.5rem 1.5rem 3rem;
+		margin: auto;
+	}
+
+	@media all and (max-width: 50rem){
+		main{
+			padding: 1rem;
+		}
+	}
+
+	/* ----- 3.2 Article ----- */
+
+		/* ----- 3.2.1 General ----- */
+		main article{
+			position: relative;
+
+			padding: 0;
+			margin: auto;
+
+			background: #fff;
+		}
+
+		/* ----- 3.2.2 Header image ----- */
+		article .topArticle{
+			width: 100%;
+			height: 18rem;
+			border: 1px solid #eee;
+
+			background-size: cover;
+			background-position: center;
+		}
+
+		/* ----- 3.2.3 Author & publish date ----- */
+		article .author{
+			padding: 1.5rem 1.5rem 0;
+
+			font-size: .875rem;
+			text-align: right;
+			color: #808080;
+		}
+
+		/* ----- 3.2.4 Content wrapper ----- */
+		article .wrapper{
+			padding: 4.5rem;
+		}
+
+		article .wrapper.withAuthor{
+			/* When author is set, the large top margin isn't needed anymore */
+			padding-top: 1rem;
+		}
+
+		@media all and (max-width: 50rem){
+			article .wrapper{
+				padding: 1.5rem;
+			}
+		}
+
+		/* ----- 3.2.5 Previous/next article buttons ----- */
+		.button.prev-page{
+			float: left;
+		}
+
+		.button.next-page{
+			float: right;
+		}
+
+	/* ----- 3.3 Slope ----- */
+	.slope{
+		-webkit-transform: rotate(-4deg);
+			-ms-transform: rotate(-4deg);
+				transform: rotate(-4deg);
+	}
+
+	.slope .content{
+		-webkit-transform: rotate(4deg);
+			-ms-transform: rotate(4deg);
+				transform: rotate(4deg);
+	}
+
+	.page-header .slope .content{
+		margin-bottom: -5.5rem;
+	}
+
+
+/* ----- 4. Header ----- */
+
+	/* ----- 4.1 General ----- */
+	.page-header{
+		position: relative;
+		overflow: hidden;
+
+		height: 17rem;
+		margin-bottom: 2.5rem;
+
+		font-size: 1.25rem;
+		text-align: center;
+	}
+
+	@media all and (max-width: 56rem){
+		.page-header{
+			font-size: 1rem;
+			height: 14rem;
+			margin-bottom: 0;
+		}
+	}
+
+	@media all and (max-width: 30rem){
+		.page-header{
+			height: 10rem;
+		}
+	}
+
+	/* ----- 4.2 Navigation ----- */
+	.page-header nav{
+		position: absolute;
+		top: -3rem;
+		left: -5rem;
+
+		width: calc(100% + 10rem);
+		padding: 6rem 0rem 6rem;
+
+		background-color: #fff;  
+		box-shadow: inset 0 0 2px 0 rgba(0,0,0,.5);
+	}
+
+	.page-header nav li{
+		display: inline-block;
+		vertical-align: middle;
+
+		min-width: 10rem;
+
+		text-align: center;
+	}
+
+	.page-header a:not(.active){
+		border-bottom: none;
+	}
+
+	.page-header .logo{
+		width: 12rem;
+		height: 8rem;
+	}
+
+	@media all and (max-width: 56rem){
+		.page-header .no-decoration img{
+			width: 9rem;
+			height: 6rem;
+		}
+
+		.page-header nav li{
+			min-width: 7rem;
+		}
+	}
+
+	@media all and (max-width: 38rem){
+		.page-header li:nth-child(3){
+			position: absolute;
+			top: -1rem;
+			left: 6rem;
+		}
+
+		.page-header nav{
+			text-align: right;
+		}
+
+		.page-header nav li{
+			min-width: 6.5em;
+		}
+	}
+
+	/* ----- 4.3 Breadcrumbs ----- */
+	.breadcrumbs li{
+		display: inline-block;
+	}
+
+	.breadcrumbs li:not(:last-of-type)::after{
+		content: '>';
+	}
+
+	@media all and (max-width: 30rem){
+		.breadcrumbs{
+			display: none;
+		}
+	}
+
+
+/* ----- 5. Card View ----- */
+
+	/* ----- 5.1 General ----- */
+	.card-view{
+		text-align: center;
+	}
+
+	.card{
+		display: inline-block;
+		position: relative;
+		overflow: hidden;
+
+		width: 21.5rem;
+		height: 21.5rem;
+		margin: 0 .75rem 1.5rem;
+
+		text-align: left;
+	}
+
+	@media all and (max-width: 30rem){
+		.card{
+			margin: 0 0 1.5rem;
+		}
+	}
+
+	@media all and (max-width: 25rem){
+		.card{
+			width: 100%;
+		}
+	}
+
+	/* ----- 5.2 Image ----- */	
+	.card-view .imgCardview{
+		max-width: 100%;
+		height: 85%;
+
+		background-size: cover;
+		background-position: center;
+	}
+
+	/* ----- 5.3 Figcaption ----- */
+	.card figcaption{
+		position: absolute;
+		top: 13.5rem;
+		left: -2rem;
+
+		width: calc(100% + 4rem);
+		padding: 2rem 4rem 4rem;
+		background-color: #fff;
+
+		transition: top .3s, padding-top .3s;
+	}
+
+	.card:hover figcaption{
+		top: 11.6rem;
+		padding-top: 2.5rem;
+	}
+
+
+/* ----- 6. List View ----- */
+
+	/* ----- 6.1 General ----- */	
+	.list-view li{
+		position: relative;
+		overflow: hidden;
+
+		height: 8rem;
+		margin: 0 auto 1.5rem;
+
+		background-color: #fff;
+	}
+
+	.list-view img,
+	.list-view figcaption,
+	.list-view a.read-more{
+		position: absolute;
+	}
+
+	/* ----- 6.2 Image ----- */	
+	.list-view .imgListview{
+		width: 10rem;
+		height: 100%;
+
+		border-right: 1px solid #eee;
+
+		background-size: cover;
+		background-position: center;
+	}
+
+	/* ----- 6.3 Figcaption ----- */	
+	.list-view figcaption{
+		top: 1rem;
+		right: 9rem;
+		bottom: 1rem;
+		left: 12rem;
+	}
+
+	/* ----- 6.4 Read more ----- */	
+	.list-view a.read-more{
+		top: 0;
+		right: 0;
+		bottom: 0;
+
+		width: 7.5rem;
+		padding: 3.5rem 1rem 0;
+		border: none;
+		border-left: 1px solid #eee;
+
+		background-color: #fafafa;
+	}
+
+	.list-view a.read-more::before{
+		content: 'Lees meer >';
+	}
+
+	/* ----- 6.5 Responsive ----- */	
+	@media all and (max-width: 47rem){
+		.list-view .imgListview{
+			width: 6rem;
+		}
+
+		.list-view figcaption{
+			left: 7.5rem;
+		}
+	}
+
+	@media all and (max-width: 43rem){
+		.list-view figcaption{
+		right: 3rem;
+		}
+
+		.list-view a.read-more{
+		width: 2.5rem;
+		}
+
+		.list-view a.read-more::before{
+		content: '>';
+		}
+	}
+
+	@media all and (max-width: 30rem){
+		.list-view .imgListview{
+			display: none;
+		}
+
+		.list-view figcaption{
+			left: 1.5rem;
+		}
+	}
+
+
+/* ----- 7. Footer ----- */
+footer{
+	max-width: 100%;
+	padding: 3rem 0 1rem;
+	margin-bottom: 0;
+
+	line-height: 2;
+	text-align: center;
+
+	background-color: #fff;
+	box-shadow: inset 0px 0px 3px 0px rgba(0,0,0,0.50);
+}
+
+@media all and (min-width: 30rem){
+	footer .footer-width{
+		max-width: 50rem;
+		margin: auto;
+	}
+
+	footer ul{
+		display: inline-block;
+		vertical-align: top;
+
+		width: 35%;
+
+		text-align: left;
+	}
+
+	footer ul:last-of-type{
+		width: 25%;
+	}
+}

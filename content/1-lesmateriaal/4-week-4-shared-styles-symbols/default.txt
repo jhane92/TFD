@@ -1,0 +1,22 @@
+Title: Week 4 - Shared Styles en Symbols
+
+----
+
+Text: 
+
+Deze week behandelen we de shared styles & symbol functies in sketch.
+Door slim gebruik te maken van deze functies kun je ervoor zorgen dat
+bij kleine wijzigingen op veel elementen je veel tijd bespaart ten opzichte 
+van andere programma's als Photoshop of Illustrator
+
+## Presentatie
+* (file: tools-for-design_sketch_week-4.keynote.key text: Presentatie Keynote)
+* (file: tools-for-design_sketch_week-4.keynote.pdf text: Presentatie PDF)
+
+----
+
+Ext-url: 
+
+----
+
+Tags: 

@@ -1,0 +1,25 @@
+Title: Beetle
+
+----
+
+Author: Wouter Jongeneel
+
+----
+
+Date: 2016-05-17
+
+----
+
+Header: 1
+
+----
+
+Text: Toffe vector graphic van een Beetle, gebaseerd op een foto.
+
+----
+
+Ext-url: 
+
+----
+
+Tags: 

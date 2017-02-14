@@ -1,0 +1,11 @@
+Title: Week 2 - Typography
+
+----
+
+Text: 
+
+Deze week behandelen we typografie. Het opmaken van text gaat op dezelfde manier als in bijvoorbeeld Photoshop of InDesign. Wat super chill is aan Sketch, zijn Text Styles. Je bepaalt één keer een stijl, die je toepast op meerdere elementen waarna je een wijziging ook maar één keer hoeft door te voeren. Go explore it!
+
+## Presentatie
+* (file: tools-for-design_sketch_week-2.keynote.key text: Presentatie Keynote)
+* (file: tools-for-design_sketch_week-2.pdf text: Presentatie PDF)

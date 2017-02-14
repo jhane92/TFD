@@ -1,0 +1,13 @@
+Title: Tip 2
+
+----
+
+Text: Description
+
+----
+
+Ext-url: 
+
+----
+
+Tags: 

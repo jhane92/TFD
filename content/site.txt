@@ -1,0 +1,17 @@
+Title: Tools for Design
+
+----
+
+Author: Student Team
+
+----
+
+Description: This is Kirby's Starterkit.
+
+----
+
+Keywords: Tools for Design, Sketch, Photoshop, Student driven
+
+----
+
+Copyright: © 2016-(date: Year) (link: http://hro.nl text: Hogeschool Rotterdam)
